@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Pull Request</title>
+</head>
+<body>
+  <h2>Create GitHub Pull Request</h2>
+  <form action="/create_pr" method="post">
+    <label>PR Title:</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>PR Description:</label><br>
+    <textarea name="body" rows="5" cols="40"></textarea><br><br>
+
+    <label>Source Branch (head):</label><br>
+    <input type="text" name="head" required><br><br>
+
+    <label>Target Branch (base):</label><br>
+    <input type="text" name="base" required><br><br>
+
+    <button type="submit">Create Pull Request</button>
+  </form>
+</body>
+</html>
